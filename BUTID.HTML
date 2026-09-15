@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La Butik de la Casa de las Girls</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff0f6;
+            color: #333;
+        }
+
+        header {
+            background: #d63384;
+            color: white;
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 35px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: #a61e5c;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #d63384;
+        }
+
+        /* GALERÍA */
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .galeria img {
+            width: 280px;
+            height: 220px;
+            max-width: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        /* VIDEOS */
+
+        .videos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        video {
+            width: 450px;
+            max-width: 100%;
+            border-radius: 12px;
+        }
+
+        /* AUDIO */
+
+        #musica {
+            background: white;
+        }
+
+        button {
+            background: #d63384;
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #a61e5c;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 27px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .galeria img {
+                width: 100%;
+                height: auto;
+            }
+
+            video {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header>
+        <h1>💗 La Butik de la Casa de las Girls</h1>
+        <p>Moda, estilo y tendencias para ti</p>
+    </header>
+
+
+    <!-- MENÚ -->
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#galeria">Galería</a>
+        <a href="#videos">Videos</a>
+        <a href="#musica">Música</a>
+    </nav>
+
+
+    <!-- INICIO -->
+
+    <section id="inicio">
+
+        <h2>✨ Bienvenidas</h2>
+
+        <p>
+            Bienvenidas a La Butik de la Casa de las Girls,
+            un espacio dedicado a la moda, el estilo y las tendencias.
+        </p>
+
+        <p>
+            Aquí encontrarás diferentes productos y opciones
+            para expresar tu personalidad y tu estilo.
+        </p>
+
+    </section>
+
+
+    <!-- GALERÍA DE IMÁGENES -->
+
+    <section id="galeria">
+
+        <h2>👗 Nuestra Galería</h2>
+
+        <div class="galeria">
+
+            <img
+                src="https://images.pexels.com/photos/4416763/pexels-photo-4416763.jpeg"
+                alt="Producto de la boutique"
+                loading="lazy">
+
+            <img
+                src="https://images.pexels.com/photos/6867202/pexels-photo-6867202.jpeg"
+                alt="Moda y estilo"
+                loading="lazy">
+
+            <img
+                src="https://images.pexels.com/photos/1377034/pexels-photo-1377034.jpeg"
+                alt="Ropa de la boutique"
+                loading="lazy">
+
+            <img
+                src="https://images.pexels.com/photos/2113855/pexels-photo-2113855.jpeg"
+                alt="Productos de moda"
+                loading="lazy">
+
+            <img
+                src="https://images.pexels.com/photos/1926620/pexels-photo-1926620.jpeg"
+                alt="Estilo de la boutique"
+                loading="lazy">
+
+        </div>
+
+    </section>
+
+
+    <!-- VIDEOS -->
+
+    <section id="videos">
+
+        <h2>🎬 Videos</h2>
+
+        <p>
+            Conoce más sobre nuestro estilo y productos.
+        </p>
+
+        <div class="videos">
+
+            <video controls>
+                <source
+                    src="https://www.pexels.com/es-es/download/video/10835749/"
+                    type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+
+            <video controls>
+                <source
+                    src="https://www.pexels.com/es-es/download/video/4718664/"
+                    type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+
+            <video controls>
+                <source
+                    src="https://www.pexels.com/es-es/download/video/7291773/"
+                    type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+
+            <video controls>
+                <source
+                    src="https://www.pexels.com/es-es/download/video/6652149/"
+                    type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+
+        </div>
+
+    </section>
+
+
+    <!-- AUDIO -->
+
+    <section id="musica">
+
+        <h2>🎵 Música de la Butik</h2>
+
+        <p>
+            Presiona el botón para reproducir o pausar la música.
+        </p>
+
+        <audio id="musicaFondo" src="fondo.mp3" loop></audio>
+
+        <button id="botonMusica">
+            ▶ Reproducir música
+        </button>
+
+    </section>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <p>© 2026 La Butik de la Casa de las Girls</p>
+        <p>Moda • Estilo • Tendencias</p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        const audio = document.getElementById("musicaFondo");
+
+        const boton = document.getElementById("botonMusica");
+
+        boton.addEventListener("click", () => {
+
+            if (audio.paused) {
+
+                audio.play();
+
+                boton.textContent = "⏸ Pausar música";
+
+            } else {
+
+                audio.pause();
+
+                boton.textContent = "▶ Reproducir música";
+
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
